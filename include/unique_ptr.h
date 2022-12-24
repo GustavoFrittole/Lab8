@@ -1,10 +1,11 @@
-#ifndef UNIQUE_PTR
-#define UNIQUE_PTR
+#ifndef UNIQUE_PTR_H
+#define UNIQUE_PTR_H
 
 template<typename T>
 class unique_ptr {
 public:
-	unique_ptr (T* ptr) {
+    unique_ptr(const unique_ptr&) = delete;
+	unique_ptr(T* ptr) {
 		this->ptr = ptr;
 	};
 	T operator*();

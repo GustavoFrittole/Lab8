@@ -4,7 +4,7 @@ T unique_ptr<T>::operator*(){
 }
 template<typename T>
 T* unique_ptr<T>::operator->(){
-	return &ptr;
+	return ptr;
 }
 
 template<typename T>

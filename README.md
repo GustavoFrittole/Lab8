@@ -1,2 +1,2 @@
 # Lab8_UP
-smart pointers
+smart pointers e STL
